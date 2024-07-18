@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Package2, CheckCircle2, ArrowRight } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Index = () => {
   return (
@@ -113,42 +114,33 @@ const Index = () => {
         <div className="container px-4 md:px-6">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-8">What Our Customers Say</h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="flex flex-col items-center space-y-2 border rounded-lg p-4">
-              <img
-                alt="Customer"
-                className="aspect-square rounded-full object-cover object-center"
-                height="80"
-                src="/placeholder.svg"
-                width="80"
-              />
+            <div className="flex flex-col items-center space-y-4 border rounded-lg p-6">
+              <Avatar className="w-24 h-24">
+                <AvatarImage src="/images/john-doe.jpg" alt="John Doe" />
+                <AvatarFallback>JD</AvatarFallback>
+              </Avatar>
               <p className="text-xl font-semibold">John Doe</p>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
+              <p className="text-sm text-gray-500 dark:text-gray-400 text-center">
                 "Geofy has made managing my energy consumption so much easier. I love the fixed price!"
               </p>
             </div>
-            <div className="flex flex-col items-center space-y-2 border rounded-lg p-4">
-              <img
-                alt="Customer"
-                className="aspect-square rounded-full object-cover object-center"
-                height="80"
-                src="/placeholder.svg"
-                width="80"
-              />
+            <div className="flex flex-col items-center space-y-4 border rounded-lg p-6">
+              <Avatar className="w-24 h-24">
+                <AvatarImage src="/images/jane-smith.jpg" alt="Jane Smith" />
+                <AvatarFallback>JS</AvatarFallback>
+              </Avatar>
               <p className="text-xl font-semibold">Jane Smith</p>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
+              <p className="text-sm text-gray-500 dark:text-gray-400 text-center">
                 "The customer support is fantastic. They're always there when I need them."
               </p>
             </div>
-            <div className="flex flex-col items-center space-y-2 border rounded-lg p-4">
-              <img
-                alt="Customer"
-                className="aspect-square rounded-full object-cover object-center"
-                height="80"
-                src="/placeholder.svg"
-                width="80"
-              />
+            <div className="flex flex-col items-center space-y-4 border rounded-lg p-6">
+              <Avatar className="w-24 h-24">
+                <AvatarImage src="/images/alex-johnson.jpg" alt="Alex Johnson" />
+                <AvatarFallback>AJ</AvatarFallback>
+              </Avatar>
               <p className="text-xl font-semibold">Alex Johnson</p>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
+              <p className="text-sm text-gray-500 dark:text-gray-400 text-center">
                 "I appreciate that Geofy uses 100% renewable energy. It's great for the environment!"
               </p>
             </div>
