@@ -33,6 +33,12 @@
     --ring: 222.2 84% 4.9%;
  
     --radius: 0.5rem;
+
+    --pastel-blue: 210 100% 97%;
+    --pastel-green: 120 100% 97%;
+    --pastel-yellow: 60 100% 97%;
+    --pastel-pink: 350 100% 97%;
+    --pastel-purple: 270 100% 97%;
   }
  
   .dark {
@@ -73,4 +79,24 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.bg-pastel-blue {
+  background-color: hsl(var(--pastel-blue));
+}
+
+.bg-pastel-green {
+  background-color: hsl(var(--pastel-green));
+}
+
+.bg-pastel-yellow {
+  background-color: hsl(var(--pastel-yellow));
+}
+
+.bg-pastel-pink {
+  background-color: hsl(var(--pastel-pink));
+}
+
+.bg-pastel-purple {
+  background-color: hsl(var(--pastel-purple));
 }
