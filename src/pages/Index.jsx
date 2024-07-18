@@ -38,15 +38,15 @@ const Index = () => {
             alt="Sustainable Energy" 
             className="object-cover w-full h-full"
           />
-          <div className="absolute inset-0 bg-pastel-blue/70 mix-blend-overlay"></div>
+          <div className="absolute inset-0 bg-black/30 mix-blend-multiply"></div>
         </div>
         <div className="container px-4 md:px-6 relative z-10">
           <div className="flex flex-col items-center space-y-4 text-center">
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white shadow-sm">
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white shadow-sm" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.5)' }}>
                 Affordable Energy for Everyone
               </h1>
-              <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl dark:text-gray-200 shadow-sm">
+              <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl dark:text-gray-200 shadow-sm bg-black/30 p-4 rounded">
                 Join Geofy and enjoy a fixed price energy membership for just 3000 SEK a month
               </p>
             </div>
